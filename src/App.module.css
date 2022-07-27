@@ -208,7 +208,7 @@ html, body {
 
 
 input.img_button {
-    background: url( "charm_plus.png" ) no-repeat;
+    background: url(../public/img/charm_plus.png) no-repeat;
     border: none;
     cursor: pointer;
     width: 32px;
@@ -362,7 +362,7 @@ input{
     content: '';
     width: 19px;
     height: 19px;
-    background-image: url(eva_arrow-ios-forward-outline.png);
+    background-image: url(../public/img/eva_arrow-ios-forward-outline.png);
     cursor: pointer;
 }
 
@@ -380,7 +380,7 @@ input{
 }
 
 .menu_wrap input:checked + label::before{
-    background-image: url(arrow.down.png);
+    background-image: url(../public/img/arrow.down.png);
 }
 .menu_wrap input:checked ~* {
     display: block;
