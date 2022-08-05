@@ -60,7 +60,7 @@ const FileUploadPage = () => {
                         <button onClick={onEmbedFileHandler} className={style.fileBtn}>파일 업로드</button>
 
                         <div className = {style.fileimg}>
-                            <img src = "/img/pixelarticons_drag-and-drop.png" />
+                            <img src = "/img/filepage/filechoice.png" />
                         </div>
 
                         

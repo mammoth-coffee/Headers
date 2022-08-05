@@ -51,8 +51,8 @@ function MainPage () {
 
                     </div>
 
-                </div>
-                <div className={style.recent_file}>
+            </div>
+            <div className={style.recent_file}>
                     <p className={style.recent_file_title}>최근파일</p>
                     <div className={style.recent_file_list}>
 
@@ -72,7 +72,7 @@ function MainPage () {
                         
 
                     </div>
-                </div>
+            </div>
         </div>
     )
 }

@@ -26,8 +26,8 @@ function ImagePreview({ image, deleteFunc }) {
         </Modal>
 
         <div className={style.icon_container}>
-          <img src="/img/starLine.png" className={style.StarIcon} />
-          <img src="/img/ion_trash-outline.png"  onClick={deleteFunc} className={style.TrashIcon} />
+          <img src="/img/img+memo/white_star.png" className={style.StarIcon} />
+          <img src="/img/img+memo/white_trashbin.png"  onClick={deleteFunc} className={style.TrashIcon} />
         </div>
 
         {/* <div>

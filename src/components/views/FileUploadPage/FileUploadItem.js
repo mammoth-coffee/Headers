@@ -16,7 +16,8 @@ function FileUploadItem(props) {
                     
                         <div className={style.logo_title}>
                             
-                            <img src="/img/—Pngtree—adobe photoshop psd ps icon_8061668 4.png"/>
+                            
+                            <img src="/img/filepage/fileimg.png"/>
                             
                             
                                 
@@ -30,9 +31,9 @@ function FileUploadItem(props) {
                             </div>
 
                             <div className = {style.starimg}>
-                                <img src = "/img/clarity_star-line (1).png"/>
+                                <img src = "/img/starLine123.png"/>
                                 <div className = {style.trashimg}>
-                                    <img src = "/img/ion_trash-outline.png" />
+                                    <img src = "/img/trashLine123.png" />
                                 </div>
                             </div>
                             

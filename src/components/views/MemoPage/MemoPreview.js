@@ -21,8 +21,9 @@ function MemoPreview(props) {
                     <textarea type="text" placeholder="메모를 입력하세요..." name="text" className={style.MemoText} rows="6"></textarea>
                 </div>
                 <div className={style.IconContainer} >
-                    <img className={style.StarIcon} src='/img/star-line-gray.png' />
-                    <img className={style.TrashIcon} src='/img/trash-1.png' onClick={memoDelete} />
+                
+                    <img className={style.StarIcon} src='/img/img+memo/gray_star.png' />
+                    <img className={style.TrashIcon} src='/img/img+memo/gray_trashbin.png' onClick={memoDelete} />
                 </div>
             </div>
             ))}

@@ -7,7 +7,7 @@ function RightNav1() {
     return (
         <div id={style.side_right}>
             <div className = {style.team_make}>
-                <img className = {style.team_img} src="/img/ant-design_team-outlined.png" />
+                <img className = {style.team_img} src="/img/teamMember.png" />
                 <div className = {style.teamfolder_text}>
                     <p>팀 폴더</p>
                 </div>
@@ -16,16 +16,16 @@ function RightNav1() {
             <div className = {style.teamfolder_menu}>
                 <div className={style.team_profile}>
                     <a href="#">
-                        <img className={style.img_yellow} src="/img/Ellipse 159.png" />
+                        <img className={style.img_yellow} src="/img/yellowCircle.png" />
                     </a>
                     <a href="#">
                         <input type="button" className={style.team_text} value="과제헬퍼"/>
                     </a>
                     <a href="#">
-                        <img className={style.img_teamperson} src="/img/bi_person-plus.png" />
+                        <img className={style.img_teamperson} src="/img/personPlus.png" />
                     </a>
                     <a href="#">
-                        <img className={style.img_folder} src="/img/fluent_folder-open-24-regular.png" />
+                        <img className={style.img_folder} src="/img/folderLine.png" />
                     </a>
                 </div>
                 <div></div>

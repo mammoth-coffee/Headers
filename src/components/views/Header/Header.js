@@ -10,7 +10,7 @@ function Header() {
                 <form action="." method="post">
                     <input className={style.search_txt} type="text" placeholder="Search Contents" />
                     <button className={style.button} type="submit">
-                        <img src = "/img/homeLine.png" />
+                        <img src = "/img/searchLine.png" />
                     </button>
                 </form>            
             </div>

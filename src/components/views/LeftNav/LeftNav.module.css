@@ -80,7 +80,7 @@
     content: '';
     width: 19px;
     height: 19px;
-    background-image: url(../../../../public/img/eva_arrow-ios-forward-outline.png);
+    background-image: url(../../../../public/img/blueArrow.png);
     cursor: pointer;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .menu_wrap input:checked + label::before{
-    background-image: url(../../../../public/img/arrow.down.png);
+    background-image: url(../../../../public/img/arrow_down.png);
 }
 .menu_wrap input:checked ~* {
     display: block;

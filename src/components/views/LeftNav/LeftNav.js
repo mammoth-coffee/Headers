@@ -30,13 +30,13 @@ function LeftNav() {
                 <a href="#">
                     <div className={style.ch2}>
                         <p>즐겨찾기</p>
-                        <img className={style.img_ch2} src = "/img/clarity_star-line.png" />
+                        <img className={style.img_ch2} src = "/img/starLine123.png" />
                     </div>
                 </a>
                 <a href="#">
                     <div className={style.ch3}>
                         <p>휴지통</p>
-                        <img className={style.img_ch3} src = "/img/ion_trash-outline.png" />
+                        <img className={style.img_ch3} src = "/img/trashLine123.png" />
                     </div>    
                 </a>
                 

@@ -34,7 +34,6 @@ function MemoUpload() {
     //   };
 
   return (
-        <div className={style.contents}>
                 <div className = {style.container}>
                     {/* <div className={style.MemoContainer}>
                         <form method='post'>
@@ -53,7 +52,7 @@ function MemoUpload() {
                     </div> */}
     
                     <button className={style.MemoBtn} onClick={onAddDetailDiv}>
-                        <img src="/img/plus_circle.png" />
+                        <img src="/img/img+memo/uploadmemo.png" />
                         <div>
                             메모 작성하기
                         </div>
@@ -62,7 +61,6 @@ function MemoUpload() {
                     <MemoPreview countList={countList}/>
                 
                 </div>
-        </div>
 
   );
 }
