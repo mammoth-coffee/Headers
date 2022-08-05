@@ -1,0 +1,391 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html, body {
+    margin: 0;
+    border : 0;
+}
+
+
+* {
+    font-family: 'NanumSquare', sans-serif;
+
+}
+
+
+#wrap {
+    width: 100vw ;
+    height: 100vh ;
+    margin: 0 auto;
+    font-size: 40px;
+    color: 	#fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+#header {
+    float: right;
+    width: 83vw ;
+    height: 10vh ;
+    background-color: #fff;
+    position: relative;
+
+
+}
+
+#side_left {
+    float: left;
+    width: 17vw;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+
+
+}
+
+
+#contents {
+    float: left;
+    width: 61vw;
+    height: 90vh ;
+    background-color: #EEF2F9;
+    overflow: auto;
+    
+}
+
+#side_right {
+    float: left;
+    width: 22vw ;
+    height: 60vh ;
+    background-color: #fff;
+    position: relative;
+    /*border-top: 0.01vh solid black; */
+}
+
+#side_right2 {
+    float: left;
+    width: 22vw;
+    height: 30vh ;
+    background-color: #fff;
+    position: relative;
+    
+}
+
+
+
+.searching{width: 700px; height: 45px; 
+    border:2px solid #BDBDBD;  top: 25%; left: 12%; position:absolute; border-radius: 20px;}
+
+.button{width: 50px; height: 45px; background: #fff;
+    float: right; right: 0; top: 0; border: none;  border-radius: 20px; display: flex; align-items: center;
+    justify-content: center; cursor: pointer;
+    
+}
+
+.search_txt {
+    float: left;
+    position: absolute;
+    top: 5px; 
+    left: 15px;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+
+.img_pay {
+    bottom: 10%; left: 7%; position: absolute; cursor: pointer;
+
+}
+
+.pay_text {
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    left: 17%;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+
+.pay_person {
+    bottom: 31%; right: 5%; position: absolute;
+}
+
+
+.pay_text2 {
+    position: absolute;
+    bottom: 30%;
+    left: 9.5%;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #828282;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    line-height : 5px;
+}
+
+.left_line {
+    width:2px;
+    height:100%;
+    position: absolute;
+    float: right;
+    right: 0;
+
+}
+
+.helper_text {
+    position: absolute;
+    top: 1%;
+    right: 25%;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #267DFF;
+    font-size: 26px;
+    font-weight: 900;
+
+}
+
+.logo_img {
+    top: 4.3%; left: 26%; position: absolute;
+}
+
+
+.name_button {
+    width: 30px; height: 30px; background: #fff; position: absolute;
+    float: right; right: 5%; top: 29%; border: none;  font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+
+.profile_img {
+    top: 27.5%; right: 8%; position: absolute; cursor: pointer;
+}
+
+
+.bell_img {
+    top: 31.4%; right: 12.8%; position: absolute; cursor: pointer;
+}
+
+
+.setup_img {
+    top: 31.9%; right: 16.6%; position: absolute; cursor: pointer;
+}
+
+
+.team_make {
+    float: top; width: 375px; height: 86px; /*top: 3%; position: absolute;*/
+    background-color: #fff; border-top:0.1rem solid #E0E0E0; border-bottom:0.1rem solid #E0E0E0; position: relative;
+
+
+}
+
+.team_img {
+    position: absolute; top: 34%; left: 11%;
+}
+
+.teamfolder_text {
+    position: absolute; top: 13%; left: 23%; padding: 0;
+    background: none;  border: none; color: #4F4F4F; font-size: 18px; font-weight: 900;
+}
+
+
+input.img_button {
+    background: url(../public/img/charm_plus.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    position : absolute;
+    top: 32%;
+    right : 8%;
+}
+
+
+.teamfolder_menu {
+    float: bottom; width: 375px; height:500px; background-color: #fff; border: none; 
+    overflow : auto;
+}
+
+
+
+
+
+.teamfolder_menu div {
+    
+    margin:0;
+    text-align:center;
+    border-bottom: 0.1rem solid #E0E0E0;
+    width: 375px;
+    height: 13%;
+    background-color: #fff;
+}
+
+
+.team_profile {
+    position : relative;
+}
+
+.img_yellow {
+    position : absolute; top: 20%; left: 10%;
+}
+
+.team_text {
+    position : absolute; top: 30%; right: 36%; border:none; background-color:#fff; font-size:16pz; font-weight: 750; color:#4F4F4F; cursor: pointer;
+}
+
+.img_teamperson {
+    position : absolute; top: 28%; right: 14%;
+}
+
+.img_folder {
+    position : absolute; top: 27%; left: 12%;
+}
+
+
+
+
+
+.menu_wrap{ margin: 0; padding: 0; }
+/*ul,li{list-style: none;}*/
+a{text-decoration: none; color: inherit;}
+
+
+/*공통클래스*/
+/*.after::after{
+    content: ''; display: block; clear: both;
+}*/
+
+
+.menu_wrap{
+    margin-top :90px;
+    padding: 60px;
+    background-color: #fff;
+    display: inline-block;
+    margin-left:0;
+    position:absolute;
+    left:0;
+    right:1px;
+
+}
+
+.menu_wrap label{
+    margin: 20px 0;
+    display: block;
+    font-weight: 700;
+    color:#333;
+    line-height: 20px;
+    position: relative;
+    padding-left: 30px;
+    font-size:1vw;
+    text-align: justify;
+
+}
+
+.ch2 {
+    margin: 20px 0;
+    display: block;
+    font-weight: 700;
+    color:#333;
+    line-height: 40px;
+    position: relative;
+    padding-left: 30px;
+    font-size:1vw;
+    text-align: justify;
+
+}
+
+.img-ch2 {
+    position:absolute;
+    top:9.5px;
+    left:-10px;
+}
+
+.ch3 {
+    margin: 20px 0;
+    display: block;
+    font-weight: 700;
+    color:#333;
+    line-height: 40px;
+    position: relative;
+    padding-left: 30px;
+    font-size:1vw;
+    text-align: justify;
+}
+
+.img-ch3 {
+    position:absolute;
+    top:9.5px;
+    left:-10px;
+}
+
+
+
+.menu_wrap ul li{
+    line-height: 40px;
+    margin-left: -10px;
+    font-size:1vw;
+    color: black;
+    text-align: justify;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#ch1{
+    display: none;
+}
+
+.menu_wrap label::before{
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: inline-block;
+    content: '';
+    width: 19px;
+    height: 19px;
+    background-image: url(../public/img/eva_arrow-ios-forward-outline.png);
+    cursor: pointer;
+}
+
+.img-ch1 {
+    position:absolute;
+    top:0;
+    left:-10px;
+    cursor: pointer;
+}
+
+
+
+.menu_wrap .sub_menu{
+    display: none;
+}
+
+.menu_wrap input:checked + label::before{
+    background-image: url(../public/img/arrow.down.png);
+}
+.menu_wrap input:checked ~* {
+    display: block;
+}
+
+
+/*콘텐츠 영역*/

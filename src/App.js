@@ -13,8 +13,15 @@ import Header from './components/views/Header/Header'
 import LeftNav from './components/views/LeftNav/LeftNav'
 import RightNav1 from './components/views/RightNav/RightNav1'
 import RightNav2 from './components/views/RightNav/RightNav2'
-import LinkStorePage from './components/views/LinkStorePage/LinkStorePage'
+
 import MainPage from './components/views/MainPage/MainPage'
+
+import LinkStorePage from './components/views/LinkStorePage/LinkStorePage'
+import ImageUpload from './components/views/ImageUploadPage/ImageUpload'
+import MemoUpload from './components/views/MemoPage/MemoUpload'
+import FileUploadPage from './components/views/FileUploadPage/FileUploadPage'
+
+
 
 function App() {
   return (
@@ -30,8 +37,11 @@ function App() {
                 <Router>
             
                     <Routes>
-                        <Route exact path="/linkstore" element={ < LinkStorePage /> } />
                         <Route exact path="/" element={ < MainPage /> } />
+                        <Route exact path="/linkstore" element={ < LinkStorePage /> } />
+                        <Route exact path="/imagestore" element={ < ImageUpload /> } />
+                        <Route exact path="/memostore" element={ < MemoUpload /> } />
+                        <Route exact path="/filestore" element={ < FileUploadPage /> } />
                     </Routes>
             
                 </Router>
