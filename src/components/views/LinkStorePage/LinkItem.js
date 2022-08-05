@@ -1,59 +1,81 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import style from './LinkStorePage.module.css';
 
 function LinkItem(props) {
 
+    const [blueBorder, setBlueBorder] = useState('none');
+
+    // const onHover = (event) => {
+    //     setBlueBorder(blueBorder === "none" ? "3px solid #267DFF" : "none");
+    // }
+    const onHover = (event) => {
+        setBlueBorder("3px solid #267DFF");
+    }
+    const onNotHover = (event) => {
+        setBlueBorder("none");
+    }
+
+    const [usualStar, setUsualStar] = useState('block');
+    const [clickedStar, setClickedStar] = useState('none');
+
+    const onClickStar = (event) => {
+        setUsualStar(usualStar === "block" ? "none" : "block")
+        setClickedStar(clickedStar === "none" ? "block" : "none")
+    }
+
+    const [text, setText] = useState("No-Title");
+    const [editable, setEditable] = useState(false);
+
+    const editOn = () => {
+        setEditable(true); 
+    };
+    const handleChange = (event) => {
+        setText(event.currentTarget.value);
+      };
+
+    const handleKeyDown = (event) => {
+        if (event.key === "Enter") {
+          setEditable(!editable);
+        }
+      };
+
+    const ref = useRef(null);
+    
+    const handleClickOutside = (e) => {
+        if (editable == true && !ref.current.contains(e.target)) setEditable(false);
+      };
+
+    useEffect(() => {
+        window.addEventListener("click", handleClickOutside, true);
+      });
+
     return ( 
-            <div className={style.LinkContainer}>
-                {/* <!-- star : absolute(이건 링크 아님) --> */}
-                {/* <img src="img/forLinkStar.png" alt="star" className="star" /> */}
+            <div className={style.LinkContainer} onMouseEnter={onHover} onMouseLeave={onNotHover} style={{ border : blueBorder}}>
+                <div ref={ref}>
+                    {editable ? ( <input type="text" value={text} onChange={(event) => handleChange(event)} onKeyDown={handleKeyDown} className={style.link_title} id={style.link_title_input}/>) : 
+                        (<span onClick={() => editOn()} className={style.link_title}>{text}</span>)}
+                        
+                </div>
                 <a href={props.link} target="_blank">
-                    {/* <!-- 이미지 부분 --> */}
-                    <div className={style.upper_img}>
-                        <img src='img/forLink.png' className={style.preview_img} alt="previewImg"/>
-                    </div>
-                    {/* <!-- 밑부분 --> */}
-                    <div className={style.bottom_white}>
-                        <div className={style.logo_title}>
-                            <div>
-                                <img src="img/button_페이스북.png" alt="logo" />
-                            </div>
-                            {/* <h2 className={style.title}>웹사이트 사용자의 ux분석</h2> */}
-                            <input type="text" value="No-Title" class={style.title} />
-                        </div>
-                        <div>
-                            <p className={style.pageLink}>{props.link}</p>
-                        </div>
-                    </div>
+                    {/* <div className={style.left_info}> */}
+                        
+                        {/* <p className={style.link_title}>웹사이트 사용자의 ux분석</p> */}
+                    {/* <p className={style.page_link}>{props.link}</p> */}
+                    <p className={style.page_link}>{ props.link.length>=50 ? props.link.substr(0,50)+"..." : props.link }</p>
+                    {/* </div> */}
+
+                    <span className={style.file_date}>2022.07.16 - 12:42 AM</span>
                 </a>
+                <button className={`${style.star_icon} ${style.button_flex}`}>
+                <img src="img/starLine.png" alt="star" onClick={onClickStar} style={{display : usualStar}}/>
+                <img src="img/starBlock.png" alt="star" onClick={onClickStar} style={{display : clickedStar}}/>
+                </button>
+                <button className={`${style.trashbin_icon} ${style.button_flex}`}>
+                    <img src="img/mainpage/trashLine.png" alt="trashbin"/>
+                </button>
             </div>
     )
 }
 
 export default LinkItem
 
-
-{/* <div class="TotalLinkContainer">
-        <!-- star : absolute(이건 링크 아님) -->
-        <img src="./button_페이스북.png" alt="" class="star">
-        <div class="LinkContainer">
-            <a href='https://brunch.co.kr/@jiyeonsongofnt/11'>
-                <!-- 이미지 부분 -->
-                <div class="upper-img">
-                    <img src=./button_페이스북.png class='preview-img'/>
-                </div>
-                <!-- 밑부분 -->
-                <div class="bottom-white">
-                    <div class="logo-title">
-                        <div>
-                            <img src="./button_페이스북.png" alt="">
-                        </div>
-                        <h2 class="title">웹사이트 사용자의 ux분석</h2>
-                    </div>
-                    <div>
-                        <p class="pageLink">https://brunch.co.kr/@jiyeonsongofnt/11</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div> */}

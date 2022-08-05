@@ -10,16 +10,16 @@ import {
 } from "react-router-dom";
 
 import Header from './components/views/Header/Header'
-import LeftNav from './components/views/LeftNav/LeftNav';
-import RightNav1 from '../src/components/views/RightNav/RightNav1'
-import RightNav2 from '../src/components/views/RightNav/RightNav2'
-import LinkStorePage from '../src/components/views/LinkStorePage/LinkStorePage'
-
+import LeftNav from './components/views/LeftNav/LeftNav'
+import RightNav1 from './components/views/RightNav/RightNav1'
+import RightNav2 from './components/views/RightNav/RightNav2'
+import LinkStorePage from './components/views/LinkStorePage/LinkStorePage'
+import MainPage from './components/views/MainPage/MainPage'
 
 function App() {
   return (
     <div className="App">
-      <div id={style.wrap}> 
+      <div id={style.wrap}>
 
         < Header />
         < LeftNav />
@@ -27,15 +27,11 @@ function App() {
         <div id={style.contents}>
             <div id={style.contents_wrap}>
 
-                <div id={style.myFolder}>
-                  <span>내폴더</span>
-                  <span>Portfolio자료</span>
-                </div>
-          
                 <Router>
             
                     <Routes>
                         <Route exact path="/linkstore" element={ < LinkStorePage /> } />
+                        <Route exact path="/" element={ < MainPage /> } />
                     </Routes>
             
                 </Router>
@@ -51,3 +47,5 @@ function App() {
 }
 
 export default App;
+
+// 로그인관련 페이지도 넣기

@@ -10,7 +10,7 @@ function Header() {
                 <form action="." method="post">
                     <input className={style.search_txt} type="text" placeholder="Search Contents" />
                     <button className={style.button} type="submit">
-                        <img src = "/img/ant-design_search-outlined.png" />
+                        <img src = "/img/homeLine.png" />
                     </button>
                 </form>            
             </div>
@@ -18,13 +18,13 @@ function Header() {
                 <button className={style.name_button}>James</button>
             </a>
             <a href="#">
-                <img className={style.profile_img} src="/img/Ellipse 144.png" />
+                <img className={style.profile_img} src="/img/userImage.png" />
             </a>
             <a href="#">
-                <img className={style.bell_img} src="/img/clarity_bell-outline-badged.png" />
+                <img className={style.bell_img} src="/img/bellLine.png" />
             </a>
             <a href="#">
-                <img className={style.setup_img} src="/img/clarity_settings-line.png" />
+                <img className={style.setup_img} src="/img/setupLine.png" />
             </a>
             
         </div>
